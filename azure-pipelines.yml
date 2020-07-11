@@ -22,6 +22,13 @@ steps:
     goals: 'clean test -Dcucumber.filter.tags=@ApiRest'
   displayName: 'Running integration tests'
 
+
+#- task: PublishTestResults@2
+#  inputs:
+#    testResultsFormat: 'JUnit'
+#    testResultsFiles: '**/TEST-*.xml'
+#  displayName: 'Publishing junit test results'
+
 - task: PublishCucumberReport@1
   inputs:
       jsonDir: 'target/cucumber-reports/json-reports'
