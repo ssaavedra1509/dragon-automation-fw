@@ -25,5 +25,6 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'target/cucumber-reports/junit-reports/*.xml'
+    testResultsFiles: '**/TEST-*.xml'
   displayName: 'Publishing test results'
+  
