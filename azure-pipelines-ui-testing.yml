@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'SeleniumVMAgentPool'
 
 steps:
 - task: Maven@3
