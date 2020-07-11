@@ -30,8 +30,8 @@ steps:
 
 - task: PublishCucumberReport@1
   inputs:
-      jsonDir: '$(System.DefaultWorkingDirectory)/target/cucumber-reports/json-reports'
-      outputPath: '$(Sytem.DefaultWorkingDirectory)/target/cucumber-reports/json-reports'
+      jsonDir: 'target/cucumber-reports/json-reports'
+      outputPath: 'target/cucumber-reports/json-reports'
       theme: 'bootstrap'
       reportSuiteAsScenarios: true
       name: 'integration-test-report'
