@@ -20,6 +20,7 @@ public class BaseTest {
         setChromeDriverProperty();
 
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get(Urls.REDMINE_LOGIN);
