@@ -10,6 +10,7 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import pe.com.swtestingdragons.dragonautomationfw.base.BaseTest;
+import pe.com.swtestingdragons.dragonautomationfw.util.Urls;
 
 import static org.hamcrest.Matchers.lessThan;
 
@@ -22,9 +23,9 @@ public class Hooks {
     public static void setup() {
 
         redmineRequestSpecification = new RequestSpecBuilder()
-                .setBaseUri("http://localhost")
+                .setBaseUri(Urls.REDMINE_URL)
                 .setBasePath("/")
-                .setPort(8081)
+                //.setPort(8081)
                 .addHeader("Content-Type", "application/json")
                 .addFilter(new RequestLoggingFilter())
                 .addFilter(new ResponseLoggingFilter())
