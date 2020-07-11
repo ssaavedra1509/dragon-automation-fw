@@ -20,7 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean test -Dcucumber.filter.tags=@E2E'
-  displayName: 'Running integration tests'
+  displayName: 'Running acceptance tests'
 
 - task: PublishTestResults@2
   inputs:
