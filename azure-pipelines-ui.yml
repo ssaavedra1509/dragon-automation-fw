@@ -22,11 +22,11 @@ steps:
     goals: 'clean test -Dcucumber.filter.tags=@E2E'
   displayName: 'Running acceptance tests'
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/TEST-*.xml'
-  displayName: 'Publishing junit test results'
+#- task: PublishTestResults@2
+#  inputs:
+#    testResultsFormat: 'JUnit'
+#    testResultsFiles: '**/TEST-*.xml'
+#  displayName: 'Publishing junit test results'
 
 - task: PublishCucumberReport@1
   inputs:
