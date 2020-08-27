@@ -1,5 +1,5 @@
 # Dragon Test Automation Framework
-This is the Dragon Test Automation Framework repository to support the online course
+This is the Dragon Test Automation Framework repository to support the online course. This framework supports UI, web services, and BDD.
 
 José Hurtado<br />
 [@jhumbertoh](https://twitter.com/jhumbertoh)
