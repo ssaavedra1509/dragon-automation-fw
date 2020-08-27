@@ -25,7 +25,7 @@ public class Hooks {
         redmineRequestSpecification = new RequestSpecBuilder()
                 .setBaseUri(Urls.EXCHANGE_RATE_BACKEND_URL)
                 .setBasePath("/")
-                .setPort(8095)
+                //.setPort(8095)
                 .addHeader("Content-Type", "application/json")
                 .addFilter(new RequestLoggingFilter())
                 .addFilter(new ResponseLoggingFilter())
@@ -34,7 +34,7 @@ public class Hooks {
                 .build();
 
         redmineResponseSpecification = new ResponseSpecBuilder()
-                .expectResponseTime(lessThan(3000L))
+                //.expectResponseTime(lessThan(3000L))
                 .build();
 
         RestAssured.requestSpecification = redmineRequestSpecification;
