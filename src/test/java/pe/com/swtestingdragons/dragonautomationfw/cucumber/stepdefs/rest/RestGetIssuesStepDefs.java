@@ -40,9 +40,16 @@ public class RestGetIssuesStepDefs {
 
         JsonPath actualData = new JsonPath(commonStepDefs.response.getBody().asString());
 
-        Assert.assertEquals(Integer.parseInt(expectedData.get("id")), actualData.getInt("issue.id"));
+        /*Assert.assertEquals(Integer.parseInt(expectedData.get("id")), actualData.getInt("issue.id"));
         Assert.assertEquals(expectedData.get("subject"), actualData.getString("issue.subject"));
         Assert.assertEquals(expectedData.get("description"), actualData.getString("issue.description"));
         Assert.assertEquals(expectedData.get("start_date"), actualData.getString("issue.start_date"));
+         */
+
+        Assert.assertEquals(expectedData.get("amount"), String.valueOf(actualData.getFloat("amount")));
+        Assert.assertEquals(expectedData.get("amountWithExchangeRate"), String.valueOf(actualData.getFloat("amountWithExchangeRate")));
+        Assert.assertEquals(expectedData.get("currencyIsoSource"), actualData.getString("currencyIsoSource"));
+        Assert.assertEquals(expectedData.get("currencyIsoTarget"), actualData.getString("currencyIsoTarget"));
+        Assert.assertEquals(expectedData.get("exchangeRate"), String.valueOf(actualData.getFloat("exchangeRate")));
     }
 }
