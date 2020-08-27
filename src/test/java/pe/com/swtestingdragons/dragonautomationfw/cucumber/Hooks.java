@@ -30,7 +30,7 @@ public class Hooks {
                 .addFilter(new RequestLoggingFilter())
                 .addFilter(new ResponseLoggingFilter())
                 .addHeader("Accept", "application/json")
-                .addHeader("X-Redmine-API-Key", "3bf031106d2a0f3878e225d012627b995f5eeb9d")
+                //.addHeader("X-Redmine-API-Key", "3bf031106d2a0f3878e225d012627b995f5eeb9d")
                 .build();
 
         redmineResponseSpecification = new ResponseSpecBuilder()
