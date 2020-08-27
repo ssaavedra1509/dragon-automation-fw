@@ -23,9 +23,9 @@ public class Hooks {
     public static void setup() {
 
         redmineRequestSpecification = new RequestSpecBuilder()
-                .setBaseUri(Urls.REDMINE_URL)
+                .setBaseUri(Urls.EXCHANGE_RATE_BACKEND_URL)
                 .setBasePath("/")
-                //.setPort(8081)
+                .setPort(8095)
                 .addHeader("Content-Type", "application/json")
                 .addFilter(new RequestLoggingFilter())
                 .addFilter(new ResponseLoggingFilter())

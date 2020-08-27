@@ -23,7 +23,7 @@ public class WebRedmineProjectsStepDefs {
     @And("I create a project")
     public void iCreateAProject(Map<String, String> projectData) {
 
-        RedmineHomePage redmineHomePage = (RedmineHomePage)commonStepDefs.currentPage;
+       /* RedmineHomePage redmineHomePage = (RedmineHomePage)commonStepDefs.currentPage;
         redmineProjectsPage = redmineHomePage.clickOnLink("Projects");
 
         String number = AppUtil.generateRandomNumber();
@@ -34,7 +34,7 @@ public class WebRedmineProjectsStepDefs {
         redmineProject.setHomePage(projectData.get("homepage") + number);
         redmineProject.setIs_public(Boolean.parseBoolean(projectData.get("public")));
 
-        redmineProjectsPage.createProject(redmineProject);
+        redmineProjectsPage.createProject(redmineProject);*/
     }
 
     @Then("The Project was successfully created")
