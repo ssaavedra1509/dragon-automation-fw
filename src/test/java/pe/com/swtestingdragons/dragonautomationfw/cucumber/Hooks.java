@@ -23,14 +23,14 @@ public class Hooks {
     public static void setup() {
 
         redmineRequestSpecification = new RequestSpecBuilder()
-                .setBaseUri(Urls.EXCHANGE_RATE_BACKEND_URL)
+                .setBaseUri(Urls.REDMINE_URL)
                 .setBasePath("/")
                 //.setPort(8095)
                 .addHeader("Content-Type", "application/json")
                 .addFilter(new RequestLoggingFilter())
                 .addFilter(new ResponseLoggingFilter())
                 .addHeader("Accept", "application/json")
-                //.addHeader("X-Redmine-API-Key", "3bf031106d2a0f3878e225d012627b995f5eeb9d")
+                .addHeader("X-Redmine-API-Key", "54d992219a4d120df54d5a72cb152e8b89d20d65")
                 .build();
 
         redmineResponseSpecification = new ResponseSpecBuilder()
