@@ -2,13 +2,13 @@ Feature: REST - Redmine REST testing - Get issues
   As a user...
   I want to ...
 
-
+@ApiRest
   Scenario: Get issues by list - JSON
     Given System is ready to sent request
     When System sends a request to list issues service from redmine json
     Then The response status should be 200
 
-
+@ApiRest
   Scenario: Get issues by id - JSON
     Given System is ready to sent request
     When System sends a request to get issues by id service from redmine
