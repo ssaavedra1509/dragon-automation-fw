@@ -2,7 +2,7 @@ Feature: Desktop WEB UI - Redmine - Projects
   As a user
   I want to create a Project and check that it was successfully created.
 
-
+@E2E
   Scenario: Create a Project
     Given I go to the Redmine login page on URL
     When I login with my credentials user "user" and "bitnami1"
