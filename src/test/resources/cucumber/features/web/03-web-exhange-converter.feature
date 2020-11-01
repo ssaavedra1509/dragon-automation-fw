@@ -2,7 +2,7 @@ Feature:  WEB UI - Exchange - P
   As a user
   I want to ...
 
-  @E2E
+ 
   Scenario: Exchange USD to PEN
     Given I go to the Exchange page on URL
     When I want to perform the following exchange:
@@ -14,7 +14,6 @@ Feature:  WEB UI - Exchange - P
       | exchangeRate    | 3.75 |
 
 
-  @E2E
   Scenario: Exchange PEN to USD
     Given I go to the Exchange page on URL
     When I want to perform the following exchange:
